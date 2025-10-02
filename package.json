@@ -1,0 +1,66 @@
+{
+  "name": "onlook-t3-template",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "homepage": "https://onlook.com",
+  "description": "T3 stack template for Onlook projects",
+  "license": "Apache-2.0",
+  "author": {
+    "name": "Onlook",
+    "email": "contact@onlook.com"
+  },
+  "scripts": {
+    "build": "next build",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio",
+    "dev": "next dev --turbo",
+    "preview": "next build && next start",
+    "start": "next start",
+    "typecheck": "tsc --noEmit",
+    "lint": "eslint . --max-warnings 0",
+    "format": "eslint --fix ."
+  },
+  "dependencies": {
+    "@libsql/client": "^0.14.0",
+    "@t3-oss/env-nextjs": "^0.12.0",
+    "@tanstack/react-query": "^5.69.0",
+    "@trpc/client": "^11.0.0",
+    "@trpc/react-query": "^11.0.0",
+    "@trpc/server": "^11.0.0",
+    "drizzle-orm": "^0.41.0",
+    "next": "^15.2.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0",
+    "server-only": "^0.0.1",
+    "superjson": "^2.2.1",
+    "zod": "^3.24.2"
+  },
+  "devDependencies": {
+    "@tailwindcss/postcss": "^4.0.15",
+    "@types/eslint": "^9.6.1",
+    "@types/node": "^20.14.10",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "drizzle-kit": "^0.30.5",
+    "eslint": "^9.36.0",
+    "postcss": "^8.5.3",
+    "prettier": "^3.6.2",
+    "tailwindcss": "^4.0.15",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.45.0"
+  },
+  "ct3aMetadata": {
+    "initVersion": "7.39.3"
+  },
+  "packageManager": "bun@1.2.21",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/onlook-dev/onlook-t3-template.git"
+  },
+  "bugs": {
+    "url": "https://github.com/onlook-dev/onlook-t3-template/issues"
+  }
+}
